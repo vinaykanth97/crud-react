@@ -47,6 +47,7 @@ const UpdateBookList = () => {
               name="title"
               value={updateFormFields ? getUpdateValues.title : ""}
               onChange={UpdateFormChange}
+              required
             />
             <input
               type="text"
@@ -55,6 +56,7 @@ const UpdateBookList = () => {
               name="author"
               value={updateFormFields ? getUpdateValues.author : ""}
               onChange={UpdateFormChange}
+              required
             />
             <input
               type="text"
@@ -63,6 +65,7 @@ const UpdateBookList = () => {
               name="publisher"
               value={updateFormFields ? getUpdateValues.publisher : ""}
               onChange={UpdateFormChange}
+              required
             />
             <input
               type="text"
@@ -71,14 +74,16 @@ const UpdateBookList = () => {
               name="genre"
               value={updateFormFields ? getUpdateValues.genre : ""}
               onChange={UpdateFormChange}
+              required
             />
             <input
-              type="text"
+              type="number"
               className="form-field"
               placeholder="Price"
               name="price"
               value={updateFormFields ? getUpdateValues.price : ""}
               onChange={UpdateFormChange}
+              required
             />
             <button type="Submit">Update Books</button>
           </form>
