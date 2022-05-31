@@ -68,7 +68,7 @@ const BookStoreLists = () => {
                   <td>{author}</td>
                   <td>{publisher}</td>
                   <td>{genre}</td>
-                  <td>{price}</td>
+                  <td>Rs.{price}</td>
                   <td>
                     <div className="flex actions">
                       <span onClick={() => UpdateBookSpecHandler(index)}>

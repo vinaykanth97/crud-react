@@ -76,6 +76,7 @@ const AddBookList = () => {
               name="title"
               onChange={BookDetailHandler}
               value={bookFields.title}
+              required
             />
             <input
               type="text"
@@ -84,6 +85,7 @@ const AddBookList = () => {
               name="author"
               onChange={BookDetailHandler}
               value={bookFields.author}
+              required
             />
             <input
               type="text"
@@ -92,6 +94,7 @@ const AddBookList = () => {
               name="publisher"
               onChange={BookDetailHandler}
               value={bookFields.publisher}
+              required
             />
             <input
               type="text"
@@ -100,14 +103,16 @@ const AddBookList = () => {
               name="genre"
               onChange={BookDetailHandler}
               value={bookFields.genre}
+              required
             />
             <input
-              type="text"
+              type="number"
               className="form-field"
               placeholder="Price"
               name="price"
               onChange={BookDetailHandler}
               value={bookFields.price}
+              required
             />
             <button type="Submit">Add Books</button>
           </form>
